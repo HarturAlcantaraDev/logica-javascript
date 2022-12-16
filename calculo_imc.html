@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+    function pularLinha() {
+
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pularLinha();
+    }
+
+    function calculaImc(altura, peso) {
+        return  peso / (altura * altura);
+        
+    }
+
+    var imcHartur = calculaImc(1.67, 70);
+    var imcAmigo = calculaImc(1.67, 80);
+
+    mostra(imcHartur);
+    mostra(imcAmigo);
+
+    //18.5 abaixo do normal
+    // > 35 está acima do normal precisa malhar
+    // entre 18.5 e 35 está na média está bem
+
+    
+</script>
